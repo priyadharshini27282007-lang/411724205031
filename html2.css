@@ -3,7 +3,14 @@ body{
     background-color:antiquewhite;
 }
 img{
-    border-radius: 100px;
+    height:500px;
+    width: 100%;
+}
+@media(max-width:1024px){
+    img{
+        height: 500px;
+        width: 500px;
+    }
 }
 video{
     height: 400px;
@@ -25,9 +32,14 @@ h1{
     margin: 30px;
 }
 nav{
-    display: flex;
-    flex-direction: row;
     gap:20px;
+}
+@media(min-width:1024px){
+    nav{
+        display:flex;
+        flex-direction:row;
+        gap:50px;
+    }
 }
 #p1{
     font-style: italic;
@@ -40,5 +52,11 @@ nav{
 }
 .grid{
     display:grid;
-    grid-template-columns: 33% 33% 33%;
+}
+@media(min-width: 600px){
+    .grid{
+        {
+            display:grid;
+        }
+    }
 }
